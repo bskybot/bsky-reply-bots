@@ -1,0 +1,29 @@
+{
+  "name": "bsky-reply-bots",
+  "version": "1.0.0",
+  "description": "Quickly build one or multiple bots, that reply to posts of its followers that contain certain keyword(s) or phrase(s).",
+  "main": "index.js",
+  "repository": "git@github.com:bskybot/bsky-reply-bots.git",
+  "author": "bskybot <bot@eineseite.at>",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.12.29",
+    "@atproto/identity": "^0.4.1",
+    "@atproto/lexicon": "^0.4.1",
+    "@atproto/repo": "^0.5.0",
+    "@atproto/syntax": "^0.3.0",
+    "@atproto/xrpc-server": "^0.6.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "multiformats": "^13.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
